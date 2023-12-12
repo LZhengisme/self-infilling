@@ -1,7 +1,7 @@
 # Self-infilling Code Generation
 
 <p align="center">
-  <img src="./assets/overview.gif" alt="Self-infilling" width="75%">
+  <img src="./assets/overview.gif" alt="Self-infilling" width="60%">
 </p>
 
 This repository contains the official implementation of paper [Self-Infilling Code Generation](https://arxiv.org/abs/2311.17972). Self-infilling offers an alternative approach for code generation, allowing for **interrupting** the decoding of uncertain contexts and crafting a definitive suffix first. The suffix is initiated with a `suffix prompt` to scaffold the overall generation, and the language model then works backward to complete the code by filling in the middle. Besides, self-infilling further facilitates a **looped decoding** procedure, which iteratively updates and synchronizes each piece of generation in a cyclic manner. 
