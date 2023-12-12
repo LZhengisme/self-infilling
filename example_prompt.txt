@@ -1,0 +1,4 @@
+Train a logistic regression model, predict the labels on the test set and compute the accuracy score:
+
+<code>
+X_train, y_train, X_test, y_test = train_test_split(X, y, test_size=0.1)
