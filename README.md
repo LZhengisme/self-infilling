@@ -136,6 +136,11 @@ y_pred = logreg.predict(X_test)
 - It is worth noticing that sometimes (self-)infilling may fail to complete the procedure (e.g., it might produce a poor suffix or struggle to generate a coherent middle given the prefix and suffix). This issue is not uncommon in infill-capable language models, and we recommend following previous practices to resolve this, such as re-sampling the generation until a satisfactory result is obtained (e.g., see the [example usage of Incoder](https://github.com/dpfried/incoder/blob/main/example_usage.py)).
 
 ### Task Evaluation
+We evaluated self-infilling generation across several code benchmarks including HumanEval, MBPP, DS-1000, and GSM8K. For detailed results and analyses, please refer to the table below as well as our paper.
+
+<p align="center">
+  <img src="./assets/humaneval_mbpp_results.png" alt="Results" width="95%">
+</p>
 
 Run our entry script `launch.sh` for conducting code generation tasks evaluated in our paper:
 
